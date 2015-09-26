@@ -35,3 +35,15 @@ div.container a.brand {
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
+.navbar-nav > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-nav > li > a:focus {
+    font-size: 16px;
+    font-weight: bold;
+    color:#fcb13e;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+}
