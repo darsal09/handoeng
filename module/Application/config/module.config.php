@@ -54,11 +54,21 @@ return array(
 				'options' => array(
 					'route' => '/contact/send',
 					'defaults' => array(
-						'controller' => 'Application\Controller\Index',
+						'controller' => 'Application\Contact\Controller\Contact',
 						'action' => 'sendContact',
 					),
 				),
 			),
+            'contact-successful' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/contact/send/successful',
+                    'defaults' => array(
+                        'controller' => 'Application\Contact\Controller\Contact',
+                        'action' => 'successfulContact',
+                    ),
+                ),
+            ),
 		),
 	),
 	'service_manager' => array(

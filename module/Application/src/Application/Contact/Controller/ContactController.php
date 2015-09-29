@@ -10,7 +10,13 @@ class ContactController extends AbstractActionController{
     }
 
     public function sendContactAction(){
+        $data = $this->getRequest()->getPost()->toArray();
+        print_r( $data );
 
+        $this->redirect()->toRoute( 'contact-successful' );
+    }
+
+    public function successfulContactAction(){
         return new ViewModel();
     }
 
