@@ -53,7 +53,9 @@
             <?php echo $this->content; ?>
         <footer style="background-color:#333;color:white;height:100%;padding-top:10px;padding-bottom:100px;margin-bottom:0;">
             <div class="container">
-                <p>&copy; 2015 - <?php echo date('Y') ?> H and O Engineering, DPC. <?php echo $this->translate('All rights reserved.') ?></p>
+                <div style="padding:10px;">
+                    <p>&copy; 2015 - <?php echo date('Y') ?> H and O Engineering, DPC. <?php echo $this->translate('All rights reserved.') ?></p>
+                </div>
             </div>
         </footer>
         <?php echo $this->inlineScript() ?>
