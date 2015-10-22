@@ -1,5 +1,6 @@
 body {
     padding-top: 60px;
+    background-color:#efefef;
 }
 
 .zf-green {
@@ -90,8 +91,8 @@ div.container a.brand {
 }
 
 .container{
-    padding-left:0px;
-    padding-right:0px;
+    padding-left:0;
+    padding-right:0;
 }
 .container .row{
     padding-left:0px;
@@ -102,8 +103,6 @@ div.container a.brand {
     padding:0px;
 }
 
-.btn{
-}
 .jumbotron{
-    background-color:white;
+    background-color:#fcb13e;
 }
