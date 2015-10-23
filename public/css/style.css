@@ -1,6 +1,7 @@
 body {
     padding-top: 60px;
     background-color:#efefef;
+    font-family:gotham;
 }
 
 .zf-green {
@@ -71,8 +72,8 @@ div.container a.brand {
 }
 .emailForm{
     padding:10px;
-    background-color:#fefefe;
-    border:1px solid #efefef;
+    background-color:#efefef;
+    border:1px solid #fefefe;
     color:black;
 }
 .form-group{
