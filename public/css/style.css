@@ -2,6 +2,7 @@ body {
     padding-top: 60px;
     background-color:#efefef;
     font-family:gotham;
+    font-size:16px;
 }
 
 .zf-green {
@@ -72,8 +73,8 @@ div.container a.brand {
 }
 .emailForm{
     padding:10px;
-    background-color:#efefef;
-    border:1px solid #fefefe;
+    background-color:#fcfcfc;
+    border:1px solid #efefef;
     color:black;
 }
 .form-group{
@@ -86,7 +87,7 @@ div.container a.brand {
     color:black;
 }
 .page-header{
-    margin-top:5px;
+    margin-top:10px;
     background-color:#fcb13e;
     color:white;
 }
@@ -106,4 +107,12 @@ div.container a.brand {
 
 .jumbotron{
     background-color:#fcb13e;
+}
+.left-column{
+    border:1px solid #efefef;
+    min-height:630px;
+}
+.right-column{
+    border:1px solid #efefef;
+    float:right;
 }
