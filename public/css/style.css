@@ -37,16 +37,16 @@ div.container a.brand {
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
-.navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a, .navbar-nav > li > a {
     font-size: 16px;
     font-weight: bold;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
+    color:#4D4B4D;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus , .navbar-inverse  .navbar-nav > li > a:hover{
     font-size: 16px;
     font-weight: bold;
-    background-color:#333;
+    background-color:#FCB13E;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -105,8 +105,11 @@ div.container a.brand {
     padding:0px;
 }
 
-.jumbotron{
-    background-color:#fcb13e;
+.container .jumbotron{
+    background-color:#efefef;
+    padding:0;
+    margin-bottom:0;
+    margin-top:-108px;
 }
 .left-column{
     border:1px solid #efefef;
@@ -115,4 +118,53 @@ div.container a.brand {
 .right-column{
     border:1px solid #efefef;
     float:right;
+}
+.message{
+    font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    position:relative;
+    top:150px;
+    left:50px;
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    width:100%;
+    overflow:hidden;
+}
+
+@media screen and ( max-width:800px ) {
+    .message{
+        top:90px;
+        left:20px;
+        font-size:15px;
+    }
+    .container  .jumbotron{
+        margin-top:-73px;
+    }
+    .page-title{
+        font-size:20px;
+        padding-left:10px;
+    }
+    .container .navbar-brand{
+        padding-left:25px;
+    }
+    .navbar-toggle{
+        margin-right:22px;
+        padding: 11px 12px;
+    }
+    .right-column{
+        clear:both;
+        width:100%;
+        padding-left:0;
+        padding-right:0;
+    }
+    .left-column{
+        clear:both;
+        width:100%;
+        padding-left:5px;
+        padding-right:0;
+    }
+    .odd, .even{
+        padding-left:5px;
+        padding-right:0;
+    }
 }
