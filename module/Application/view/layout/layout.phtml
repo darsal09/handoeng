@@ -30,8 +30,9 @@
 			<script type="text/javascript" src="/js/ticket.js"></script>
     </head>
     <body style="margin:0px;">
+        <div class="container">
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#F3F1F2;border:0px;">
-            <div class="container">
+            <div class="container"  style="border:0;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -50,14 +51,15 @@
                 </div>
             </div>
         </nav>
+        <div class="main">
             <?php echo $this->content; ?>
-        <footer style="background-color:#efefef;color:black;height:100%;padding-top:10px;padding-bottom:100px;margin-bottom:0;font-size:12px;">
-            <div class="container">
+        </div>
+        <footer style="background-color:#fcb13e;color:#f5f5f5;height:100%;padding-top:10px;padding-bottom:100px;font-size:13px;">
                 <div style="padding:10px;">
                     <p>&copy; 2015 - <?php echo date('Y') ?> H and O Engineering, DPC. <?php echo $this->translate('All rights reserved.') ?></p>
                 </div>
-            </div>
         </footer>
         <?php echo $this->inlineScript() ?>
+        </div>
     </body>
 </html>
