@@ -19,8 +19,10 @@ class AboutController extends AbstractActionController {
 
         $founders = [
             [
-                'name' => 'Helman',
+                'name' => 'Santiago Helman',
                 'image' => 'http://www.bustler.net/images/news2/2013_aia_institute_honor_awards_-_architecture-06.jpg',
+                'phone' => '718-783-2121',
+                'email' => 'helman@hando-eng.com',
                 'history' => 'Information about the member will go here. It should give a brief history about the
                 member. Where s/he graduated from and his/her origin. It should also mentioned where s/he worked before  and the most
                 import project s/he has worked on.',
@@ -28,6 +30,8 @@ class AboutController extends AbstractActionController {
             [
                 'name' => 'Orjuela',
                 'image' => 'http://www.oneworld365.org/img/101/Architecture%20Internships%20Abroad.jpg',
+                'phone' => '718-783-2222',
+                'email' => 'orjuela@hando-eng.com',
                 'history' => 'Information about the member will go here. It should give a brief history about the
                 member. Where s/he graduated from and his/her origin. It should also mentioned where s/he worked before  and the most
                 import project s/he has worked on.',
@@ -37,6 +41,8 @@ class AboutController extends AbstractActionController {
             [
                 'name' => 'Juan Pablo Orjuela',
                 'image' => 'http://bedroomkitchen.com/wp-content/uploads/2014/01/architecture-design-606.jpg',
+                'phone' => '718-783-2323',
+                'email' => 'jp@hando-eng.com',
                 'history' => 'Information about the member will go here. It should give a brief history about the
                 member. Where s/he graduated from and his/her origin. It should also mentioned where s/he worked before  and the most
                 import project s/he has worked on.',
@@ -44,6 +50,8 @@ class AboutController extends AbstractActionController {
             [
                 'name' => 'Kathleen',
                 'image' => 'https://secure.static.tumblr.com/b05009699d8487b856765345d7d5a8d6/duj1jbc/iZxn33osm/tumblr_static_architectural_drawing_4.jpg',
+                'phone' => '718-783-2424',
+                'email' => 'kathleen@hando-eng.com',
                 'history' => 'Information about the member will go here. It should give a brief history about the
                 member. Where s/he graduated from and his/her origin. It should also mentioned where s/he worked before  and the most
                 import project s/he has worked on.',

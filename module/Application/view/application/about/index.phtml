@@ -1,4 +1,4 @@
-    <div class="page-header">
+<div class="page-header" xmlns="http://www.w3.org/1999/html">
         <h1 class="page-title" id="history">About H+0 Engineering</h1>
     </div>
     <div class="row">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div id="history" class="col-md-8 pull-right left-column">
+        <div id="history" class="col-md-8 left-column">
             <p>
                 <?php echo $this->mission; ?>
             </p>
@@ -38,11 +38,20 @@
             <?php
                 foreach( $this->founders AS $founder ) {
                     ?>
-                        <p>
-                            <h3 id="founder_a"><?php echo $founder['name']; ?></h3>
-                            <img src="<?php echo $founder['image']; ?>" style="float:left; width=300px;">
-                            <?php echo $founder['history']; ?>
-                        </p>
+                        <div style="row">
+                            <div class="col-md-5">
+                                <img src="<?php echo $founder['image']; ?>" style="width:100%">
+                            </div>
+                            <div class="col-md-7" style="margin-top:-45px;padding:20px;">
+                                    <h3 id="founder_a"><?php echo $founder['name']; ?></h3>
+                                <p>
+                                    phone: <?php echo $founder[ 'phone' ]; ?><br/>
+                                    email: <?php echo $founder[ 'email']; ?>
+                                </p>
+                                <p><?php echo $founder['history']; ?></p>
+                            </div>
+                        </div>
+                    <p style="clear:both;">&nbsp;</p>
             <?php
                 }
             ?>
@@ -50,11 +59,20 @@
             <?php
                 foreach( $this->members AS $member ) {
                     ?>
-                        <p>
-                            <h3><?php echo $member[ 'name' ]; ?></h3>
-                            <img src="<?php echo $member[ 'image' ]; ?>" style="float:left; width=250px;">
-                            <?php echo $member[ 'history' ]; ?>
-                        </p>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="<?php echo $member[ 'image' ]; ?>" style="width:100%;">
+                            </div>
+                            <div class="col-md-7" style="margin-top:-45px;padding:20px;">
+                                <h3><?php echo $member[ 'name' ]; ?></h3>
+                                <p>
+                                    phone: <?php echo $member[ 'phone' ]; ?><br/>
+                                    email: <?php echo $member[ 'email']; ?>
+                                </p>
+                                <p><?php echo $member[ 'history' ]; ?></p>
+                            </div>
+                        </div>
+                    <p style="clear:both;">&nbsp;</p>
             <?php
                 }
             ?>
