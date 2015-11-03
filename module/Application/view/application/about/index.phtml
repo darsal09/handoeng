@@ -13,18 +13,10 @@
                             <a href="#history">Company History</a>
                         </li>
                         <li>
+                            <a href="#founders">Founders</a>
+                        </li>
+                        <li>
                             <a href="#members">Members</a>
-                            <ul style="list-style:none;">
-                                <li>
-                                    <a href="#member_a">Member A</a>
-                                </li>
-                                <li>
-                                    <a href="#member_b">Member B</a>
-                                </li>
-                                <li>
-                                    <a href="#member_c">Member C</a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -34,7 +26,9 @@
             <p>
                 <?php echo $this->mission; ?>
             </p>
-            <h2 id="founders">Founders</h2>
+            <p id="founders">&nbsp;</p>
+            <p>&nbsp;</p>
+            <h2>Founders</h2>
             <?php
                 foreach( $this->founders AS $founder ) {
                     ?>
@@ -55,6 +49,8 @@
             <?php
                 }
             ?>
+            <p id="members">&nbsp;</p>
+            <p>&nbsp;</p>
             <h2 class="members">Members</h2>
             <?php
                 foreach( $this->members AS $member ) {
