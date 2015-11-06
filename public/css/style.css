@@ -10,6 +10,10 @@ div.container a.brand {
     margin-left: 0;
     padding: 8px 20px 12px 40px;
 }
+.member-info{
+    margin-top:-40px;
+    padding:20px;
+}
 .move-right{
     float:right;
 }
@@ -70,7 +74,7 @@ div.container a.brand {
 .page-header{
     margin:0;
     border:0;
-    color:#fcb13e;
+   color:#fcb13e;
 }
 .page-title{
     padding-left:10px;
@@ -136,6 +140,13 @@ div.container a.brand {
     .container  .jumbotron{
         margin-top:-73px;
     }
+    .page-header{
+        background-color:#fcb13e;
+        color:white;
+        margin-top:10px;
+        margin-top: -17px;
+        padding-top: 1px;
+    }
     .page-title{
         font-size:20px;
     }
@@ -162,7 +173,15 @@ div.container a.brand {
         padding-left:5px;
         padding-right:0;
     }
+
     .main{
         border:0;
+    }
+    .member-info{
+        margin-top:-20px;
+        padding:10px;
+    }
+    .table-content{
+        display:none;
     }
 }
