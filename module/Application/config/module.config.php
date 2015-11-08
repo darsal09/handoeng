@@ -69,6 +69,16 @@ return array(
                     ),
                 ),
             ),
+            'services-index' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/services',
+                    'defaults' => array(
+                        'controller' => 'Application\Services\Controller\Services',
+                        'action' => 'index',
+                    ),
+                ),
+            ),
 		),
 	),
 	'service_manager' => array(
@@ -95,7 +105,8 @@ return array(
 			'Application\Controller\Index' => 'Application\Controller\IndexController',
 			'Application\Contact\Controller\Contact' => 'Application\Contact\Controller\ContactController',
 			'Application\Projects\Controller\Projects' => 'Application\Projects\Controller\ProjectsController',
-			'Application\About\Controller\About' => 'Application\About\Controller\AboutController'
+			'Application\About\Controller\About' => 'Application\About\Controller\AboutController',
+			'Application\Services\Controller\Services' => 'Application\Services\Controller\ServicesController'
 		),
 	),
 	'view_manager' => array(
