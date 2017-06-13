@@ -11,9 +11,13 @@ class ContactController extends AbstractActionController{
 
     public function sendContactAction(){
         $data = $this->getRequest()->getPost()->toArray();
-        print_r( $data );
-
-        $this->redirect()->toRoute( 'contact-successful' );
+        $message = '<p>The following person has contacted handoeng.com with the following information: <br/>Name: '.$data[ 'name'].
+                    '<br/>Phone: '.$data[ 'phone'].'<br/>Message: </p><p>'.$data[ 'message'].'</p>';
+        if( mail( $data[ 'email'], $data[ 'subject'], $message )){
+            $this->redirect()->toRoute( 'contact-successful' );
+        }else{
+            $this->redirect()->toRoute( 'contact' );
+        }
     }
 
     public function successfulContactAction(){

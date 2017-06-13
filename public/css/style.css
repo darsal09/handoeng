@@ -120,6 +120,17 @@ div.container a.brand {
 .main{
     margin-top:18px;
 }
+UL.services{
+    list-style:none;
+}
+UL.services LI{
+    list-style:none;
+    font-weight:bolder;
+    font-size:2.5em;
+    border-top:1px dotted #fcb13e;
+    padding:10px 0px 10px 0px;
+}
+
 @media screen and ( max-width:768px ) {
     .message{
         top:90px;
@@ -184,4 +195,8 @@ div.container a.brand {
     .table-content{
         display:none;
     }
+    UL.services LI{
+        font-size:1.5em;
+    }
+
 }
