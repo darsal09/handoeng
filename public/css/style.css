@@ -119,11 +119,15 @@ div.container a.brand {
 }
 .main{
     margin-top:18px;
+    min-height:500px;
 }
 UL.services{
     list-style:none;
     color:gray;
     font-size:0.80em;
+    background-image: linear-gradient(to top,#eee 0,rgba(221, 221, 221, 0.1) 100%);
+    border:1px groove rgba(252, 177, 62, 0.4);
+    margin-top:100px;
 }
 UL.services LI{
     list-style:none;
