@@ -145,6 +145,9 @@ UL.services LI > SPAN{
 UL.services LI SPAN > IMG{
     width:35px;
 }
+.mobile-version{
+    display:none;
+}
 @media screen and ( min-width:768px ) {
     .navbar-brand IMG{
         height:100px;
@@ -219,7 +222,11 @@ UL.services LI SPAN > IMG{
         font-size:2.0em;
         border-top:1px dotted #fcb13e;
     }
-
-
+   .container .jumbotron{
+        display:none;
+    }
+    .mobile-version{
+        display:block;
+    }
 }
 
